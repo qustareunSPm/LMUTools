@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fcstyle.css">
+    <title>Race Readiness Checklist</title>
+</head>
+<body>
+    <header>
+        <section class="menu">
+            <a href="index.html" class="button">Main Page</a>
+            <a href="fuel_calc.html" class="button">LMGT3 Fuel Calculator</a>
+            <a href="stint.html" class="button">Stint Blueprint</a>
+        </section>
+    </header>
+    <main>
+        <div class="infocontainer" style="height: 520px;">
+            <h1>Pre-Race Checklist</h1>
+            <div class="checklist-box" style="display: flex; flex-direction: column; gap: 18px; width: 80%; margin: 20px auto;">
+                <label style="display: flex; align-items: center; gap: 15px; cursor: pointer;">
+                    <input type="checkbox" class="race-ch" style="width: 25px; height: 25px; accent-color: #FF1D43;"> 
+                    <span>Wheel & Pedals calibrated (Moza Software OK)</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 15px; cursor: pointer;">
+                    <input type="checkbox" class="race-ch" style="width: 25px; height: 25px; accent-color: #FF1D43;"> 
+                    <span>Qualy/Race setup loaded correctly</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 15px; cursor: pointer;">
+                    <input type="checkbox" class="race-ch" style="width: 25px; height: 25px; accent-color: #FF1D43;"> 
+                    <span>Fuel load double-checked for stint 1</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 15px; cursor: pointer;">
+                    <input type="checkbox" class="race-ch" style="width: 25px; height: 25px; accent-color: #FF1D43;"> 
+                    <span>Fitted correct tyre compound (Slick/Wet)</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 15px; cursor: pointer;">
+                    <input type="checkbox" class="race-ch" style="width: 25px; height: 25px; accent-color: #FF1D43;"> 
+                    <span>Force Feedback force check (No clipping)</span>
+                </label>
+            </div>
+            <span id="result" style="font-size: 22px;">Status: Waiting for green flag</span>
+        </div>
+    </main>
+    <script src="checklist.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fcstyle.css">
+    <link rel="stylesheet" href="stint.css">
+    <title>Stint Blueprint</title>
+</head>
+<body>
+    <header>
+        <section class="menu">
+            <a href="index.html" class="button">Main Page</a>
+            <a href="fuel_calc.html" class="button">LMGT3 Fuel Calculator</a>
+            <a href="checklist.html" class="button">Race Readiness Checklist</a>
+        </section>
+    </header>
+    <main>
+        <div class="infocontainer container-stint">
+            <h1>Stint Blueprint (Pit-Stop Strategy)</h1>
+            <form class="flex-form">
+                <section>
+                    <div class="labels"><label>Total Race Time (minutes)</label></div>
+                    <input class="numinp full-width" placeholder="120" type="number" id="totalRaceTime">
+                </section>
+                <section>
+                    <div class="labels"><label>Max Stint Duration (minutes)</label></div>
+                    <input class="numinp full-width" placeholder="55" type="number" id="stintTime">
+                </section>
+                <input type="button" id="calcStints" value="Blueprint Strategy">
+            </form>
+            <span id="result" class="center-text">Pit-stops required: 0</span>
+        </div>
+    </main>
+    <script src="stint.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.container-checklist {
+    height: 520px;
+}
+
+.checklist-box {
+    display: flex; 
+    flex-direction: column; 
+    gap: 18px; 
+    width: 80%; 
+    margin: 20px auto;
+}
+
+.checklist-item {
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    cursor: pointer;
+}
+
+.checklist-item span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.checklist-checkbox {
+    width: 25px; 
+    height: 25px; 
+    accent-color: #FF1D43;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 22px;
+    transition: 300ms;
+}

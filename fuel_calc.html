@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fcstyle.css">
+    <title>Fuel Calculator by qusta</title>
+</head>
+<body>
+    <header>
+        <section class="menu">
+            <a href="index.html" class="button">Main Page</a>
+            <a href="stint.html" class="button">Stint Blueprint</a>
+            <a href="checklist.html" class="button">Race Readiness Checklist</a>
+        </section>
+    </header>
+    <main>
+        <div class="infocontainer">
+            <h1>LMGT3 Fuel Calculator</h1>
+            <form>
+                <section>
+                    <div class="labels">
+                        <img src="imgs/clock.png" alt="clock"> <label>Race duration</label>
+                    </div>
+
+                    <input type="range" id="racedur" min="0" max="1440" step="5" value="0" required oninput="updateValueRD(this.value)">
+
+                    <div class="racedr">
+                        <span id="time">0h 0m</span>
+                    </div>
+                </section>
+
+                <div class="fuelperlap">
+                    <section class="lowerline">
+                        <div class="labels">
+                            <img src="imgs/fuel.png" alt="fuel"> <label>Fuel / Lap</label>
+                        </div>
+                        <input class="numinp" placeholder="0.0" type="number" step="0.01" id="fuelperlap"> 
+                        <span>L</span>
+                    </section>
+
+                    <section class="avg">
+                        <div class="labels">
+                            <img src="imgs/fuel.png" alt="fuel"> <label>AVG Laptime</label>
+                        </div>
+                        <input class="minsecms" placeholder="0" type="number" min="0" id="fuelperlapmins">
+                        <span>min</span>
+                        <input class="minsecms" placeholder="0" type="number" min="0" max="59" id="fuelperlapsecs">
+                        <span>sec</span>
+                        <input class="minsecms" placeholder="000" type="number" min="0" max="999" id="fuelperlapmss">
+                        <span>ms</span>
+                    </section>
+
+                    <section>
+                        <div class="labels">
+                            <img src="imgs/clock.png" alt="clock"> <label>Safety margin</label>
+                        </div>
+                        <input type="range" id="safetymargin" min="0" max="10" step="1" value="0" required oninput="updateValueSM(this.value)">
+                        <span id="extralaps">0 Laps</span>
+                    </section>
+
+                    <input type="button" id="calculate" value="Calculate fuel">
+                </div>
+            </form>
+            <span id="result">0.00 L</span>
+        </div>
+    </main>
+<script src="fuelcalc.js"></script>
+</body>
+</html>
